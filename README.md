@@ -2,6 +2,10 @@
 
 Un programa simple en python que permite crear una estructura de datos de tipo pila e interactuar con esta mediante la consola de comandos
 
+# Importante
+
+Todos los elementos se almancenan en formato de string.
+
 # Licencia
 
 MIT
@@ -12,7 +16,17 @@ Clonar el proyecto y ejecutar `python3 main.py`
 
 # Como usar
 
-Pendiente...
+Utilizar algunos de los comandos disponibles en el menu
+## Comandos
+
+Push: Agrega un elemento a la pila
+Pop: Elimina el ultimo elemento de la pila
+Get Element: Obtiene el elemento en un indice dado
+Get Largest Element: Obtiene el elemento de mayor largo de la lista
+Compare Items Sizes: Compara el tamaño de dos elementos
+Get Items: Devuelve todos los elementos de la pila junto con su indice
+Exit: Sale del programa
+
 
 # Como contribuir
 
