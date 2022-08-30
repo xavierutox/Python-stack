@@ -36,15 +36,22 @@ class Stack:
         else:
             return max(self.items, key=len)
     
-    def getItemSize(self):
-        return len(self.items)
+    def getItemSize(self, item):
+        if self.isEmpty():
+            print("Stack is empty")
+            return
+        try:
+            return len(item)
+        except TypeError:
+            print("Invalid input, not a string")
+            return
     
     def compareItemsSize(self, index1, index2):
         try:
             if self.getItemSize(self.getElement(index1)) > self.getItemSize(self.getElement(index2)):
-                print("Item 1 is larger")
+                print(f"Item 1 ({self.getElement(index1)}) is larger")
             elif self.getItemSize(self.getElement(index1)) < self.getItemSize(self.getElement(index2)):
-                print("Item 2 is larger")
+                print(f"Item 2 ({self.getElement(index2)}) is larger")
             else:
                 print("Items are equal")
         except ValueError:
@@ -52,4 +59,7 @@ class Stack:
             return
         except IndexError:
             print("Index Out of Range")
+            return
+        except TypeError:
+            print("Invalid input, not a string")
             return
