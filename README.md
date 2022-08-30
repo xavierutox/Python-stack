@@ -6,6 +6,14 @@ Un programa simple en python que permite crear una estructura de datos de tipo p
 
 MIT
 
+# Como instalar
+
+Clonar el proyecto y ejecutar `python3 main.py`
+
+# Como usar
+
+Pendiente...
+
 # Como contribuir
 
 Las ramas siguen una lógica basada en GIT FLOW, por lo que cada cambio en el repositorio se debe hacer através de pull request a la rama padre. Es decir, el repositorio cuenta como base con una rama main que contiene la ultima versión estable del proyecto, una rama dev que contiene las ultimas features aprobadas y una serie de ramas extras bajo la siguiente lógica:
