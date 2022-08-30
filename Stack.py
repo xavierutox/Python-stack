@@ -25,12 +25,16 @@ class Stack:
     def isEmpty(self):
         return self.items == []
     
+    def getItems(self):
+        for i in reversed(self.items):
+            print(f"[{self.items.index(i)}]. {i} \n")
+    
     def getLargest(self):
         if self.isEmpty():
             print("Stack is empty")
             return
         else:
-            return max(self.items)
+            return max(self.items, key=len)
     
     def getItemSize(self):
         return len(self.items)
