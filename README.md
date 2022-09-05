@@ -12,7 +12,7 @@ MIT
 
 # Como instalar
 
-Clonar el proyecto y ejecutar `python3 main.py`
+Clonar el proyecto y ejecutar `python3 Main.py`
 
 # Como usar
 
