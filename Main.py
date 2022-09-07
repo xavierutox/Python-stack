@@ -1,12 +1,6 @@
 try:
-    import time
-except ImportError:
-    logging.error("time.py not found")
-    exit()
-try:
     import logging
-    date = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime())
-    logging.basicConfig(filename=f"log_{date}.log", level=logging.DEBUG)
+    logging.basicConfig(filename=f"log.log", level=logging.DEBUG)
 except ImportError:
     print("Logging.py not found")
     exit()
