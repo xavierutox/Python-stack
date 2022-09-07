@@ -20,21 +20,23 @@ if __name__ == "__main__":
         try:
             try:
                 choice = int(input(
-                    "1. Push\n2. Pop\n3. Get Element\n4. Get Largest Element\n5. Compare Items Size\n6. Get Items\n7. Exit\nEnter your choice: "))
+                    "1. Push\n2. Pop\n3. Get Elements\n4. Get Element\n5. Get Largest Element\n6. Get Shortests Element\n7. Compare Items Size\n8. Exit\nEnter your choice: "))
                 if choice == 1:
                     stack.push(str(input("Enter the element to push: ")))
                 elif choice == 2:
                     stack.pop()
                 elif choice == 3:
-                    print(stack.getElement(int(input("Enter the index: "))))
+                    stack.getItems()
                 elif choice == 4:
-                    print(stack.getLargest())
+                    print(stack.getElement(int(input("Enter the index: "))))
                 elif choice == 5:
+                    print(stack.getLargest())
+                elif choice == 6:
+                    print(stack.getShortest())
+                elif choice == 7:
                     stack.compareItemsSize(int(input("Enter the index 1: ")), int(
                         input("Enter the index 2: ")))
-                elif choice == 6:
-                    stack.getItems()
-                elif choice == 7:
+                elif choice == 8:
                     exit()
             except ValueError:
                 print("Invalid choice")
