@@ -56,6 +56,15 @@ class Stack:
             return
         else:
             return max(self.items, key=len)
+    
+    def getShortest(self):
+        if self.isEmpty():
+            logging.warning(
+                f"{time.strftime('%H:%M:%S', time.localtime())} trying to get shortest element, but stack is empty")
+            print("Stack is empty, can't get shortest element")
+            return
+        else:
+            return min(self.items, key=len)
 
     def getItemSize(self, item):
         if self.isEmpty():
